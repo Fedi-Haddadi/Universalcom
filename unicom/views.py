@@ -61,7 +61,6 @@ def post(request):
         elif recipient_service_provider == 'telecom':
             recipient_solde = telecom_solde.objects.get(phone_number=recipient)
                                                 
-        
         # Update user solde
         user_solde.solde -= ammount
         user_solde.save()
